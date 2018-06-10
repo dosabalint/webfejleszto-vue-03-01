@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Komponensek</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- vendor CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container" id="app">
+
+        <!-- oldalcím -->
+        <h1>Komponensek</h1>
+
+        <!-- inputok -->
+        <div class="mb-3">
+            <input type="text" v-model="theme">
+            <input type="number" v-model="offset">
+        </div>
+
+        <!-- gombok -->
+        <div>
+            <counter-button v-bind:theme="theme" v-bind:offset="offset"></counter-button>
+            <counter-button v-bind:theme="theme" v-bind:offset="offset"></counter-button>
+            <counter-button v-bind:theme="theme" v-bind:offset="offset"></counter-button>
+        </div>
+    </div>
+
+    <!-- vendor JS -->
+    <script src="node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/vue/dist/vue.js"></script>
+
+    <!-- app JS -->
+    <script src="src/components/counter-button.js"></script>
+    <script defer src="scripts.js"></script>
+</body>
+
+</html>

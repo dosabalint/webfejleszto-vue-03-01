@@ -1,0 +1,24 @@
+{
+    "name": "01_komponensek",
+    "version": "1.0.0",
+    "description": "",
+    "main": "scripts.js",
+    "scripts": {
+        "open": "opener http://localhost:8080",
+        "serve": "http-server -a localhost -s",
+        "dev": "concurrently \"npm run serve\" \"npm run open\""
+    },
+    "author": "dosabalint",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^4.1.1",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.14.3",
+        "vue": "^2.5.16"
+    },
+    "devDependencies": {
+        "concurrently": "^3.5.1",
+        "http-server": "^0.11.1",
+        "opener": "^1.4.3"
+    }
+}
